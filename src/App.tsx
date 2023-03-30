@@ -99,9 +99,7 @@ export function App() {
               tasks.map((task) => (
                 <TaskComponent
                   key={task.id}
-                  checked={task.checked}
-                  id={task.id}
-                  message={task.message}
+                  data={task}
                   onCompleteTask={handleCompleteTask}
                   onDeleteTask={handleDeleteTask}
                 />
