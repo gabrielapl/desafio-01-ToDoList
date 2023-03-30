@@ -74,6 +74,7 @@ export function App() {
         <form onSubmit={handleCreateTask}>
           <input
             value={message}
+            maxLength={60}
             placeholder="Adicione uma nova tarefa"
             onChange={(e) => setMessage(e.target.value)}
           />
